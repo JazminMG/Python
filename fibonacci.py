@@ -23,6 +23,6 @@ def fibo_3(max):
 		a,b=b,a+b
 	
 fibo_1(10)		
-print (fibo_2(10))
+
 
 
