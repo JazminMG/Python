@@ -4,6 +4,8 @@ def fibo_1(max):
 	while a<max:
 		print(a)
 		a,b=b,a+b
+
+
 def fibo_2(max):
 	serie = []
 	a, b = 0, 1
@@ -13,5 +15,18 @@ def fibo_2(max):
 		a, b = b, a+b
 	return serie
 	
+def fibo_3(max):
+	a,b=0,1
+	
+	while a < max:
+		yield a
+		a,b=b,a+b
+	
 fibo_1(10)		
 print (fibo_2(10))
+
+
+fibo_1(10)		
+for n in fibo_3(10):
+	print (n)
+
