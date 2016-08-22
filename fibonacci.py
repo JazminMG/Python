@@ -22,7 +22,16 @@ def fibo_3(max):
 		yield a
 		a,b=b,a+b
 	
-fibo_1(10)		
+def principal():
+	fibo_1 (10)
+	print (fibo_2(10))
+	
+	for f in fibo_3(10):
+		print f
+		
+principal()
+
+	
 
 
 
